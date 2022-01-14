@@ -1,11 +1,56 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+/* navigation bar */
+header{
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.headings{
+    display: flex;
+    justify-content: space-between;
+    width: 870px;
+
+}
+nav img{
+    width: 40px;
+    height: 51px;
+    margin-right: 15px;
+}
+.logo_area{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 900;
+}
+.button_area{
+    display: flex;
+    align-items: center;
+}
+.button_area img{
+    width: 51px;
+    height: 51px;
+}
+span{
+    display: flex;
+}
+span>a{
+    text-decoration: none;
+    list-style: none;
+    margin: 0 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
 
 /* full bodis */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #ece9ff;
+    margin: 0;
 }
 main{
     display: flex;
@@ -30,7 +75,10 @@ main{
     color: #562EFF;
     font-size: 24px;
     font-weight: 500;
-    margin-top: 3px;
+    margin-top: 6px;
+    border-bottom: 2px solid #8982ac;
+    display: inline;
+    padding: 2px;
 
 }
 
@@ -108,7 +156,7 @@ hr{
     font-size: 12px;
 }
 .fa-star.filled{
-    color: #FFC014;
+    color: #FFC014; 
 
 }
 
@@ -117,11 +165,35 @@ hr{
 }
 
 .course_duration{
-    color: hotpink;
-    background-color: #FFE4E8;
+    color: rgb(211, 35, 123);
+    background-color: #eec4ca;
     border: 2px solid hotpink;
     padding: 3px;
-    border-radius: 14.6913px;
+    border-radius: 15px;
+    font-size: 13px;
+    Width:85.83px;
+    Height:18.38px;
+    text-align: center;
+
+}
+/* for footers tag */
+footer{
+    background-color: #562EFF;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > p{
+    display: flex;
+    padding: 5px;
+}
+.highlight_footer{
+    margin-left: 5px;
+    font-style: oblique;
+    font-weight: 900px;
 }
 
 /* for responsive */
@@ -132,7 +204,7 @@ hr{
     .conteiner{
         width: 100%;
     }
-    .players ,.blogs,.courses{
+    .players ,.blogs,.courses , .headings{
         grid-template-columns: repeat(1 ,1fr);
     }
     .player, .blog{
